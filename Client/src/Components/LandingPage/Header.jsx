@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import axios from 'axios'; // Import Axios for sending HTTP requests
+import axios from 'axios';
+import FileInputButton from './FileInputButton';
 
 const BoxContainerWrapper = styled.div`
   border: 2px solid transparent;
@@ -80,6 +81,7 @@ const ContentContainer = styled.div`
 
 const BoxContainer = () => {
   const [selectedFile, setSelectedFile] = useState(null);
+  const [predict,setPredict] = useState(null);
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -90,7 +92,6 @@ const BoxContainer = () => {
       alert('Please upload an image first.');
       return;
     }
-
     const formData = new FormData();
     formData.append('image', selectedFile);
 
@@ -101,6 +102,16 @@ const BoxContainer = () => {
       console.error('Error sending image:', error);
       alert('Error sending image to the server.');
     }
+    
+    try {
+      const response = await axios.get('http://localhost:3000/predict',formData);
+      console.log('Found Prediction: ', response.data);
+      setPredict(response.data);
+    } catch (error) {
+      console.error('Error sending prediction', error);
+      alert('Error sending prediction');
+    }
+
   };
 
   return (
@@ -127,6 +138,8 @@ const BoxContainer = () => {
             <button className="check-button" onClick={handleNextClick}>
               Detect it
             </button>
+
+            {predict?predict:null}
           </div>
         )}
       </ContentContainer>
