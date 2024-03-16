@@ -95,9 +95,8 @@ const BoxContainer = () => {
     formData.append('image', selectedFile);
 
     try {
-      const response = await axios.post('url....', formData);
+      const response = await axios.post('http://localhost:4000/api/upload', formData);
       console.log('Image sent successfully:', response.data);
-      // Add logic for navigation to the next page after successful image upload
     } catch (error) {
       console.error('Error sending image:', error);
       alert('Error sending image to the server.');
