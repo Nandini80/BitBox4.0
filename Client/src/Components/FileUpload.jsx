@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from './LandingPage/Header'
 import Features from './LandingPage/Features'
 import HowItWorks from './LandingPage/HowItWorks'

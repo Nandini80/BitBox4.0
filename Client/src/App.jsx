@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import FileUpload from './Components/FileUpload';
 import Report from './Components/Report';
 
