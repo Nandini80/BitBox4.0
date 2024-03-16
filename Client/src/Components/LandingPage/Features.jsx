@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const CardWrapper = styled.div`
@@ -119,13 +118,12 @@ const ContentWrapper = styled.div`
   }
 `;
 
-const Card = ({ title, copy, button }) => {
+const Card = ({ title, copy }) => {
   return (
     <CardWrapper>
       <ContentWrapper>
         <h2 className="title">{title}</h2>
         <p className="copy">{copy}</p>
-        <button className="btn">{button}</button>
       </ContentWrapper>
     </CardWrapper>
   );
