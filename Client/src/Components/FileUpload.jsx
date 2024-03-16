@@ -11,8 +11,8 @@ function FileUpload() {
             <NavBar />
             <Header />
             <Features />
-            <HowItWorks />
-            <CallToAction />
+            {/* <HowItWorks /> */}
+            {/* <CallToAction /> */}
             <Footer />
         </div>
     )
