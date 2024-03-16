@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import axios from 'axios'; // Import Axios for sending HTTP requests
 
@@ -106,7 +106,7 @@ const BoxContainer = () => {
   return (
     <BoxContainerWrapper className="box-container">
       <ImageContainer />
-      <ContentContainer className="content-container">
+      <ContentContainer className="content-container ">
         <h2>DeepFake Detection System</h2>
         <p>
           A deepfake detection system is a technology designed to identify and mitigate the spread of deepfake content.
