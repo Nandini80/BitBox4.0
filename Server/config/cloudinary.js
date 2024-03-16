@@ -1,5 +1,7 @@
 const cloudinary = require("cloudinary").v2;
 
+
+
 exports.cloudinaryConnect = () => {
 	try {
 		cloudinary.config({
@@ -11,5 +13,6 @@ exports.cloudinaryConnect = () => {
 	} catch (error) {
 		console.log(error);
 	}
+
 };
 

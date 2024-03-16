@@ -9,8 +9,8 @@ const CardWrapper = styled.div`
   padding: 1rem;
   width: 100%;
   text-align: center;
-  color: #333; /* Changed color to a dark shade */
-  background-color: #f5f5f5; /* Changed background color to a brighter shade */
+  color: white; 
+  background-color: #1f5156;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1),
     0 8px 16px rgba(0, 0, 0, 0.1);
 
@@ -132,10 +132,10 @@ const Card = ({ title, copy, button }) => {
 };
 
 const cards = [
-  { title: 'DeepFake Detection System', copy: 'A technology designed to identify and mitigate the spread of deepfake content.', button: 'View More' },
-  { title: 'Advanced AI Filters', copy: 'Utilize cutting-edge artificial intelligence filters for real-time deepfake detection.', button: 'Try Now' },
-  { title: 'Deepfake Prevention Tools', copy: 'Protect your content with powerful deepfake prevention tools and techniques.', button: 'Learn More' },
-  { title: 'Secure Your Media', copy: 'Keep your media secure and authentic with our deepfake detection and prevention solutions.', button: 'Explore' }
+  { title: 'DeepFake Detection System', copy: 'A technology designed to identify and mitigate the spread of deepfake content.' },
+  { title: 'Advanced AI Filters', copy: 'Utilize cutting-edge artificial intelligence filters for real-time deepfake detection.' },
+  { title: 'Deepfake Prevention Tools', copy: 'Protect your content with powerful deepfake prevention tools and techniques.' },
+  { title: 'Secure Your Media', copy: 'Keep your media secure and authentic with our deepfake detection and prevention solutions.'}
 ];
 
 const PageContent = styled.div`
