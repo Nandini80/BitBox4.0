@@ -23,7 +23,7 @@ This project is a DeepFake detection system built using the MERN stack (MongoDB,
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Cloud Storage**: Cloudinary
-- **Machine Learning**: Python (TensorFlow, PyTorch)
+- **Machine Learning**: Python (TensorFlow)
 
 ## Getting Started
 - Backend <br>
