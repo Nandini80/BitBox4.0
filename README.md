@@ -1,5 +1,7 @@
 # DeepFake Detection System
+The DeepFake Detection System is a sophisticated tool designed to identify manipulated media using advanced machine learning algorithms. It features a user-friendly interface for uploading images, integrates with cloud storage for seamless image management, and provides real-time feedback on DeepFake detection results. This system ensures efficient and accurate identification of DeepFake content, enhancing media authenticity and security.
 
+<br>
 This project is a DeepFake detection system built using the MERN stack (MongoDB, Express.js, React.js, Node.js) along with machine learning technologies.
 
 ## Table of Contents
